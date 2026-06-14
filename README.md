@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 3B-nexosuite React + Email + Git Roadmap
+# 🚀 3B-nexosuite React + Email + Git + LLM Roadmap
 
 ### A bilingual roadmap website for becoming a **React Frontend Developer** ready for remote jobs in **UAE, Egypt, and GCC**.
 
@@ -9,7 +9,8 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Focus](https://img.shields.io/badge/Main%20Focus-React.js-blue?style=for-the-badge)
 ![Project](https://img.shields.io/badge/Project-3B--nexosuite-purple?style=for-the-badge)
-![Languages](https://img.shields.io/badge/Language-EN%20%7C%20AR-orange?style=for-the-badge)
+![Languages](https://img.shields.io/badge/Website-EN%20%7C%20AR-orange?style=for-the-badge)
+![README](https://img.shields.io/badge/README-English%20Only-lightgrey?style=for-the-badge)
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Ready-black?style=for-the-badge)
 
 <br>
@@ -23,7 +24,7 @@
 
 ## 📌 Project Overview
 
-This repository contains a single-file bilingual website for the **3B-nexosuite React + Email + Git Roadmap**.
+This repository contains a single-file bilingual website for the **3B-nexosuite React + Email + Git + LLM Roadmap**.
 
 The roadmap is designed to help prepare for remote frontend roles in:
 
@@ -60,11 +61,11 @@ React Frontend Developer with SaaS/ERP Product, GitHub, and Communication Skills
 
 | Feature | Description |
 |---|---|
-| 🌐 Bilingual UI | English and Arabic in the same file |
+| 🌐 Bilingual UI | English and Arabic in the same `index.html` file |
 | ⚛️ React Roadmap | Frontend-focused learning direction |
 | ✉️ Email Skills | Daily updates, follow-ups, meeting summaries, technical emails |
 | 🌿 Git Skills | Commits, branches, pull requests, README, GitHub Pages |
-| 📚 Course Links | Direct Udemy links for React, Git, Email, TypeScript, Node basics |
+| 📚 Course Links | Direct Udemy links for React, Git, Email, TypeScript, and Node basics |
 | ✅ Checklist | Browser-based local daily tracker |
 | 📱 Responsive UI | Works on mobile, tablet, and desktop |
 | 🚀 GitHub Pages Ready | Upload and publish easily |
@@ -74,7 +75,7 @@ React Frontend Developer with SaaS/ERP Product, GitHub, and Communication Skills
 ## 🗂️ Folder Structure
 
 ```text
-3b-nexosuite-react-email-git-roadmap/
+3b-nexosuite-react-email-git-llm-roadmap/
 ├── index.html
 └── README.md
 ```
@@ -99,7 +100,39 @@ index.html
 | Git + GitHub | [The Git & GitHub Bootcamp](https://www.udemy.com/course/git-and-github-bootcamp/) |
 | Git Alternative | [Git Complete](https://www.udemy.com/course/git-complete/) |
 | Node.js Basics | [Node.js Course](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/) |
+| Optional LLM Engineering | [LLM Engineering: Master AI and Large Language Models](https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/) |
 | GitHub Actions Later | [Git + GitHub Actions for CI/CD](https://www.udemy.com/course/git-github-actions-for-ci-cd/) |
+
+---
+
+## 🤖 Optional AI / LLM Bonus Track
+
+AI is a **bonus track**, not the main focus right now.
+
+Start this after you have:
+
+- A working React dashboard
+- TypeScript/API integration basics
+- Git and GitHub workflow
+- Professional email practice
+- A clean README and deployed demo
+
+### Recommended AI Course
+
+| Course | Why It Fits |
+|---|---|
+| [LLM Engineering: Master AI and Large Language Models](https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/) | Best fit for adding AI features to 3B-nexosuite |
+
+### AI Features You Can Add to 3B-nexosuite Later
+
+- AI invoice assistant
+- AI sales follow-up generator
+- AI customer support chatbot
+- AI report summarizer
+- AI email generator
+- AI product description generator
+
+> Keep AI optional until the core React portfolio project is strong. Only the LLM Engineering course is included in this roadmap.
 
 ---
 
@@ -149,6 +182,7 @@ index.html
 - Merge conflicts
 - README updates
 - GitHub Pages
+
 
 ---
 
@@ -209,7 +243,7 @@ No installation is required.
 1. Create a repository named:
 
 ```text
-3b-nexosuite-react-email-git-roadmap
+3b-nexosuite-react-email-git-llm-roadmap
 ```
 
 2. Upload:
@@ -259,32 +293,14 @@ erp
 
 ---
 
-## 🇦🇪 / 🇪🇬 Arabic Summary
-
-هذا المشروع عبارة عن موقع ثنائي اللغة لخطة تعلم عملية تهدف إلى تجهيزك لوظائف **React Frontend Remote** في الإمارات ومصر والخليج.
-
-الخطة تجمع بين:
-
-- React.js
-- TypeScript
-- API Integration
-- Email Writing
-- Git + GitHub
-- 3B-nexosuite SaaS/ERP Portfolio
-
-الفكرة الأساسية:
-
-> لا تتعلم فقط. ابنِ دليل واضح على GitHub.
-
----
+## ✅ Final Reminder
 
 <div align="center">
-
-## ✅ Final Reminder
 
 ### React is the main skill.  
 ### Git proves your workflow.  
 ### Email proves your remote communication.  
+### AI is an optional bonus after the core roadmap.  
 ### 3B-nexosuite proves your product experience.
 
 </div>
