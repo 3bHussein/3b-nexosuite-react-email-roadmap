@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="3B-nexosuite React, Email, Git and Remote Job Roadmap for UAE, Egypt and GCC." />
+  <title>3B-nexosuite React + Email + Git Roadmap</title>
+  <style>
+    :root {
+      --bg:#f5f7fb; --surface:#ffffff; --text:#102033; --muted:#64748b;
+      --primary:#2563eb; --cyan:#06b6d4; --purple:#7c3aed; --green:#16a34a;
+      --orange:#f59e0b; --dark:#07111f; --dark2:#0d1b2f; --line:rgba(16,32,51,.12);
+      --shadow:0 22px 65px rgba(16,32,51,.14); --radius:26px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Segoe UI",Tahoma,Arial,sans-serif;background:radial-gradient(circle at 8% 0%,rgba(37,99,235,.12),transparent 35%),radial-gradient(circle at 98% 12%,rgba(124,58,237,.12),transparent 32%),var(--bg);color:var(--text)}
+    body[dir="rtl"]{font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+    a{text-decoration:none;color:inherit}
+    p{color:var(--muted);line-height:1.75}
+    .lang{display:none} .lang.active{display:contents}
+    .hero{min-height:100vh;padding:24px}
+    .navbar{width:min(1200px,100%);margin:0 auto;padding:16px 18px;border:1px solid rgba(255,255,255,.75);background:rgba(255,255,255,.78);backdrop-filter:blur(18px);border-radius:999px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:18px;z-index:50;box-shadow:0 14px 40px rgba(16,32,51,.08)}
+    .brand{display:flex;align-items:center;gap:12px} .mark{width:46px;height:46px;display:grid;place-items:center;border-radius:16px;color:#fff;font-weight:900;background:linear-gradient(135deg,var(--primary),var(--purple))}
+    .brand strong{display:block;line-height:1} .brand small{display:block;color:var(--muted);font-size:12px;margin-top:5px}
+    .nav{display:flex;gap:4px;align-items:center} .nav a{padding:10px 12px;border-radius:999px;color:var(--muted);font-weight:800;font-size:13px} .nav a:hover{background:rgba(37,99,235,.09);color:var(--primary)}
+    .top-actions{display:flex;gap:10px;align-items:center} .lang-btn{border:1px solid rgba(37,99,235,.18);background:rgba(37,99,235,.08);color:var(--primary);font-weight:900;padding:10px 14px;border-radius:999px;cursor:pointer}
+    .menu{display:none;width:44px;height:44px;border:0;background:#eef4ff;border-radius:14px;cursor:pointer} .menu span{display:block;width:20px;height:2px;background:var(--text);margin:5px auto;border-radius:6px}
+    .hero-grid{width:min(1200px,100%);margin:90px auto 0;display:grid;grid-template-columns:1.12fr .88fr;gap:38px;align-items:center} body[dir="rtl"] .hero-grid{direction:rtl}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(37,99,235,.09);color:var(--primary);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase} body[dir="rtl"] .eyebrow{letter-spacing:0}
+    h1{font-size:clamp(42px,6vw,78px);line-height:.96;letter-spacing:-.06em;margin:22px 0 20px} body[dir="rtl"] h1{letter-spacing:-.02em;line-height:1.12}
+    h2{font-size:clamp(32px,4.5vw,54px);line-height:1.05;letter-spacing:-.05em;margin:18px 0 14px} body[dir="rtl"] h2{letter-spacing:-.02em;line-height:1.18}
+    h3{font-size:22px;margin:0 0 10px;letter-spacing:-.03em} body[dir="rtl"] h3{letter-spacing:0}
+    .hero-copy>p{font-size:18px;max-width:760px} .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:32px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:999px;border:1px solid transparent;font-weight:900;cursor:pointer;transition:.25s}
+    .btn.primary{color:#fff;background:linear-gradient(135deg,var(--primary),var(--cyan));box-shadow:0 18px 38px rgba(37,99,235,.28)} .btn.primary:hover{transform:translateY(-2px)} .btn.secondary{background:rgba(255,255,255,.84);border-color:var(--line);color:var(--text)} .btn.small{padding:10px 14px;font-size:13px} .course-link{margin-top:18px;width:100%;text-align:center}
+    .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;max-width:900px} .stat{padding:16px;border-radius:20px;border:1px solid rgba(255,255,255,.8);background:rgba(255,255,255,.72)} .stat strong{display:block;font-size:25px} .stat span{color:var(--muted);font-size:13px}
+    .card,.info,.course,.routine,.tracker,.job,.cta,.email-card{background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.88);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card{padding:30px;position:relative;overflow:hidden} .card:before{content:"";position:absolute;width:240px;height:240px;right:-90px;top:-90px;background:radial-gradient(circle,rgba(6,182,212,.25),transparent 70%)}
+    .card-top{display:flex;gap:9px;align-items:center;color:var(--muted);font-size:13px;font-weight:900} .dot{width:10px;height:10px;background:#22c55e;border-radius:50%;box-shadow:0 0 0 8px rgba(34,197,94,.12)} .card h2{font-size:34px;line-height:1.08}
+    .progress label{display:flex;justify-content:space-between;font-weight:900;margin:16px 0 8px} .bar{height:10px;border-radius:999px;background:rgba(37,99,235,.11);overflow:hidden} .bar span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--primary),var(--cyan),var(--purple))} .bar.big{height:14px}
+    .section{width:min(1200px,calc(100% - 48px));margin:0 auto;padding:92px 0} .section-title{text-align:center;max-width:880px;margin:0 auto 44px}
+    .grid{display:grid;gap:20px} .cols2{grid-template-columns:repeat(2,1fr)} .cols3{grid-template-columns:repeat(3,1fr)} .cols4{grid-template-columns:repeat(4,1fr)} .cols5{grid-template-columns:repeat(5,1fr)}
+    .info,.course,.job,.email-card{padding:26px;transition:.25s} .info:hover,.course:hover,.job:hover,.email-card:hover{transform:translateY(-6px)} .icon{width:54px;height:54px;display:grid;place-items:center;border-radius:18px;background:#eef4ff;color:var(--primary);font-weight:900;margin-bottom:18px}
+    .dark{width:min(1240px,calc(100% - 32px));background:radial-gradient(circle at 10% 10%,rgba(37,99,235,.34),transparent 30%),radial-gradient(circle at 90% 18%,rgba(124,58,237,.28),transparent 28%),linear-gradient(135deg,var(--dark),var(--dark2));border-radius:38px;padding-left:28px;padding-right:28px;color:#fff;box-shadow:0 28px 80px rgba(7,17,31,.30)} .dark h2,.dark h3{color:#fff} .dark p{color:rgba(255,255,255,.72)} .dark .eyebrow{background:rgba(255,255,255,.08);color:#a7e6ff}
+    .skill{padding:24px;border-radius:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)} .skill ul{margin:16px 0 0;padding-left:18px;color:rgba(255,255,255,.86);line-height:1.85} body[dir="rtl"] .skill ul{padding-left:0;padding-right:18px}
+    .timeline{display:grid;gap:18px;position:relative} .timeline:before{content:"";position:absolute;top:22px;bottom:22px;left:104px;width:2px;background:linear-gradient(var(--primary),var(--cyan));opacity:.25} body[dir="rtl"] .timeline:before{left:auto;right:104px}
+    .timeline-item{display:grid;grid-template-columns:210px 1fr;gap:24px} .month{align-self:start;padding:14px 18px;border-radius:999px;text-align:center;font-weight:900;color:#fff;background:linear-gradient(135deg,var(--primary),var(--purple));box-shadow:0 12px 28px rgba(37,99,235,.22)} .timeline-content{padding:24px;border-radius:24px;background:#fff;border:1px solid var(--line);box-shadow:0 16px 50px rgba(16,32,51,.08)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px} .chips span{display:inline-flex;padding:8px 11px;border-radius:999px;background:#eef4ff;color:var(--primary);font-weight:900;font-size:12px}
+    .course{position:relative;overflow:hidden} .course:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--primary),var(--cyan),var(--purple))} .meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0} .meta span{padding:7px 10px;border-radius:999px;background:rgba(16,32,51,.06);color:var(--muted);font-size:12px;font-weight:900}
+    .course ul,.job ul,.email-card ul{margin:16px 0 0;padding-left:18px;color:var(--muted);line-height:1.8} body[dir="rtl"] .course ul,body[dir="rtl"] .job ul,body[dir="rtl"] .email-card ul{padding-left:0;padding-right:18px}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center} .align-left{text-align:left;margin:0} body[dir="rtl"] .align-left{text-align:right}
+    .routine{padding:18px} .routine-row{display:grid;grid-template-columns:92px 1fr;gap:18px;padding:20px;border-bottom:1px solid var(--line)} .routine-row:last-child{border-bottom:0} body[dir="rtl"] .routine-row{grid-template-columns:1fr 92px} body[dir="rtl"] .routine-row>span{grid-column:2;grid-row:1} body[dir="rtl"] .routine-row>div{grid-column:1;grid-row:1} .routine-row>span{height:56px;display:grid;place-items:center;border-radius:18px;background:#eef4ff;color:var(--primary);font-weight:900} .routine-row strong{display:block;font-size:18px;margin-bottom:4px} .routine-row p{margin:0}
+    .tracker{padding:28px;max-width:800px;margin:0 auto} .tracker-head{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:20px} .tracker-head h3{margin:0;font-size:26px} .checklist{display:grid;gap:12px} .checklist label{display:flex;align-items:center;gap:12px;padding:16px;border:1px solid var(--line);background:#fff;border-radius:18px;font-weight:800;cursor:pointer} .checklist input{width:20px;height:20px;accent-color:var(--primary)} .score{margin-top:24px} .score>span{display:block;font-weight:900;margin-bottom:10px}
+    .cta{padding:50px;text-align:center;background:linear-gradient(135deg,rgba(255,255,255,.94),rgba(255,255,255,.82)),radial-gradient(circle at 20% 8%,rgba(37,99,235,.18),transparent 38%)} .cta p{max-width:780px;margin:0 auto 28px} .footer{text-align:center;color:var(--muted);padding:30px 24px 50px}
+    .reveal{opacity:0;transform:translateY(20px);transition:.7s} .reveal.visible{opacity:1;transform:translateY(0)} .delay1{transition-delay:.1s} .delay2{transition-delay:.2s} .delay3{transition-delay:.3s}
+    @media(max-width:1080px){.nav a{font-size:12px;padding:10px 8px}.cols4,.cols5,.stats{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:980px){.hero-grid,.split{grid-template-columns:1fr}.cols3{grid-template-columns:repeat(2,1fr)}.hero-grid{margin-top:60px}}
+    @media(max-width:760px){.hero{padding:14px}.navbar{border-radius:24px;align-items:flex-start}.menu{display:block}.top-actions{margin-left:auto} body[dir="rtl"] .top-actions{margin-left:0;margin-right:auto} .nav{position:absolute;top:82px;left:14px;right:14px;flex-direction:column;align-items:stretch;display:none;background:#fff;border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:var(--shadow)} .nav.open{display:flex} .nav a{text-align:center} .section{width:min(100% - 28px,1200px);padding:70px 0} .stats,.cols2,.cols3,.cols4,.cols5{grid-template-columns:1fr} .timeline:before{left:18px} body[dir="rtl"] .timeline:before{right:18px;left:auto} .timeline-item{grid-template-columns:1fr;gap:12px;padding-left:42px} body[dir="rtl"] .timeline-item{padding-left:0;padding-right:42px} .month{justify-self:start} body[dir="rtl"] .month{justify-self:end} .routine-row,body[dir="rtl"] .routine-row{grid-template-columns:1fr} body[dir="rtl"] .routine-row>span,body[dir="rtl"] .routine-row>div{grid-column:auto;grid-row:auto} .cta{padding:34px 22px}}
+  </style>
+</head>
+<body id="pageBody" dir="ltr">
+
+  <div id="en" class="lang active">
+    <header class="hero">
+      <nav class="navbar">
+        <a class="brand" href="#top"><span class="mark">3B</span><span><strong>3B-nexosuite</strong><small>React + Email + Git</small></span></a>
+        <div class="top-actions"><button class="lang-btn" id="toAr">AR</button><button class="menu" id="menuEn"><span></span><span></span><span></span></button></div>
+        <div class="nav" id="navEn"><a href="#split">Split</a><a href="#skills">Skills</a><a href="#email">Email</a><a href="#git">Git</a><a href="#roadmap">Roadmap</a><a href="#courses">Courses</a><a href="#daily">Daily</a></div>
+      </nav>
+
+      <section class="hero-grid" id="top">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">React.js · Email · GitHub · Remote Jobs</span>
+          <h1>React first, with email and Git as fixed career skills.</h1>
+          <p>This updated roadmap prepares you for React.js remote jobs in UAE, Egypt, and GCC using 3B-nexosuite as your SaaS/ERP portfolio project.</p>
+          <div class="hero-actions"><a class="btn primary" href="#courses">Course Links</a><a class="btn secondary" href="#git">Git Skills</a></div>
+          <div class="stats">
+            <div class="stat"><strong>60%</strong><span>React / Frontend</span></div>
+            <div class="stat"><strong>20%</strong><span>TypeScript + API</span></div>
+            <div class="stat"><strong>10%</strong><span>Email / Remote</span></div>
+            <div class="stat"><strong>5%</strong><span>Git + GitHub</span></div>
+            <div class="stat"><strong>5%</strong><span>Node basics</span></div>
+          </div>
+        </div>
+
+        <div class="card reveal delay1">
+          <div class="card-top"><span class="dot"></span><span>Final Positioning</span></div>
+          <h2>React Frontend Developer with SaaS/ERP product, GitHub, and communication skills.</h2>
+          <p>Remote teams care about UI quality, Git workflow, clear README files, daily updates, and the ability to explain work professionally.</p>
+          <div class="progress">
+            <label>React / Frontend <span>60%</span></label><div class="bar"><span style="width:60%"></span></div>
+            <label>TypeScript + API Integration <span>20%</span></label><div class="bar"><span style="width:20%"></span></div>
+            <label>Email + Remote Communication <span>10%</span></label><div class="bar"><span style="width:10%"></span></div>
+            <label>Git + GitHub <span>5%</span></label><div class="bar"><span style="width:5%"></span></div>
+            <label>Node.js Basics <span>5%</span></label><div class="bar"><span style="width:5%"></span></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="split">
+        <div class="section-title reveal"><span class="eyebrow">Final Split</span><h2>Your balanced learning focus</h2><p>React remains the main path. Email and Git are small but very important for remote job readiness.</p></div>
+        <div class="grid cols5">
+          <article class="info reveal"><div class="icon">60%</div><h3>React / Frontend</h3><p>Components, hooks, forms, routing, dashboards, responsive UI, Tailwind, and portfolio proof.</p></article>
+          <article class="info reveal delay1"><div class="icon">20%</div><h3>TypeScript + API</h3><p>Typed props, API response types, Axios/fetch, loading states, error states, filters, and CRUD.</p></article>
+          <article class="info reveal delay2"><div class="icon">10%</div><h3>Email Skills</h3><p>Daily updates, follow-ups, meeting summaries, remote status reports, and technical explanations.</p></article>
+          <article class="info reveal delay3"><div class="icon">5%</div><h3>Git + GitHub</h3><p>Commits, branches, pull requests, README, merge conflicts, GitHub Pages, and portfolio workflow.</p></article>
+          <article class="info reveal"><div class="icon">5%</div><h3>Node.js Basics</h3><p>Only enough to understand REST APIs, Express routes, JSON, and backend communication.</p></article>
+        </div>
+      </section>
+
+      <section class="section dark" id="skills">
+        <div class="section-title light reveal"><span class="eyebrow">Skills</span><h2>Skills for React remote jobs</h2><p>These skills should appear in your projects, GitHub, CV, LinkedIn, and interviews.</p></div>
+        <div class="grid cols4">
+          <article class="skill reveal"><h3>JavaScript for React</h3><ul><li>ES6+</li><li>map/filter/reduce</li><li>destructuring</li><li>async/await</li><li>fetch</li></ul></article>
+          <article class="skill reveal delay1"><h3>React.js</h3><ul><li>components</li><li>props/state</li><li>hooks</li><li>forms</li><li>routing</li></ul></article>
+          <article class="skill reveal delay2"><h3>TypeScript</h3><ul><li>types</li><li>interfaces</li><li>typed props</li><li>API response types</li><li>ERP models</li></ul></article>
+          <article class="skill reveal delay3"><h3>Email Writing</h3><ul><li>daily updates</li><li>follow-ups</li><li>meeting summaries</li><li>technical issue emails</li><li>remote async updates</li></ul></article>
+          <article class="skill reveal"><h3>Git + GitHub</h3><ul><li>commits</li><li>branches</li><li>pull requests</li><li>merge conflicts</li><li>GitHub Pages</li></ul></article>
+          <article class="skill reveal delay1"><h3>UI / Tailwind</h3><ul><li>responsive design</li><li>dashboards</li><li>tables</li><li>forms</li><li>modals</li></ul></article>
+          <article class="skill reveal delay2"><h3>API Integration</h3><ul><li>Axios/fetch</li><li>loading states</li><li>error states</li><li>pagination</li><li>CRUD</li></ul></article>
+          <article class="skill reveal delay3"><h3>Remote Workflow</h3><ul><li>README</li><li>demo video</li><li>English updates</li><li>clean portfolio</li><li>job applications</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section" id="email">
+        <div class="section-title reveal"><span class="eyebrow">Email & Remote Communication</span><h2>Email skill remains part of the roadmap</h2><p>Every week, write and save reusable templates for remote work, HR, clients, and project updates.</p></div>
+        <div class="grid cols3">
+          <article class="email-card reveal"><div class="icon">01</div><h3>Daily / Weekly Update</h3><p>Used with remote managers and teams.</p><ul><li>Completed work</li><li>Current work</li><li>Blockers</li><li>Next steps</li></ul></article>
+          <article class="email-card reveal delay1"><div class="icon">02</div><h3>Technical Issue Email</h3><p>Used to explain bugs or delays professionally.</p><ul><li>Problem summary</li><li>Steps checked</li><li>Possible reason</li><li>Suggested solution</li></ul></article>
+          <article class="email-card reveal delay2"><div class="icon">03</div><h3>Follow-up / Reminder Email</h3><p>Used with clients, HR, managers, and stakeholders.</p><ul><li>Polite reminder</li><li>Clear request</li><li>Deadline if needed</li><li>Professional closing</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section" id="git">
+        <div class="section-title reveal"><span class="eyebrow">Git + GitHub</span><h2>Git is required for remote React jobs</h2><p>Use Git daily on 3B-nexosuite. Your commits, branches, and README show your professional workflow.</p></div>
+        <div class="grid cols3">
+          <article class="email-card reveal"><div class="icon">01</div><h3>Daily Git Basics</h3><p>Use these commands after every practice session.</p><ul><li>git status</li><li>git add .</li><li>git commit</li><li>git push</li></ul></article>
+          <article class="email-card reveal delay1"><div class="icon">02</div><h3>Weekly Git Workflow</h3><p>Practice like a remote team.</p><ul><li>create branch</li><li>build feature</li><li>open pull request</li><li>merge to main</li></ul></article>
+          <article class="email-card reveal delay2"><div class="icon">03</div><h3>Portfolio GitHub</h3><p>Make your repository look professional.</p><ul><li>README.md</li><li>screenshots</li><li>live demo</li><li>GitHub Pages</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="section-title reveal"><span class="eyebrow">6-Month Roadmap</span><h2>React-focused roadmap with Email and Git</h2><p>Every month improves the 3B-nexosuite dashboard, your communication, and your GitHub proof.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="month">Month 1</div><div class="timeline-content"><h3>JavaScript + Git Basics + Email Basics</h3><p>Strengthen JavaScript, start daily commits, and write basic status emails.</p><div class="chips"><span>ES6</span><span>arrays</span><span>async/await</span><span>git commit</span><span>daily update</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">Month 2</div><div class="timeline-content"><h3>React Fundamentals + Follow-ups</h3><p>Build components and forms while practicing follow-up/reminder emails.</p><div class="chips"><span>components</span><span>state</span><span>forms</span><span>branching</span><span>follow-up</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">Month 3</div><div class="timeline-content"><h3>React Dashboard UI + GitHub Pages</h3><p>Build the dashboard and publish progress through GitHub Pages.</p><div class="chips"><span>dashboard</span><span>Tailwind</span><span>tables</span><span>GitHub Pages</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">Month 4</div><div class="timeline-content"><h3>TypeScript + API + Technical Emails</h3><p>Type your components, connect APIs, and write technical issue explanations.</p><div class="chips"><span>TypeScript</span><span>API</span><span>loading/error</span><span>technical email</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">Month 5</div><div class="timeline-content"><h3>Professional Workflow + Pull Requests</h3><p>Add routing, validation, tests, pull requests, and structured remote updates.</p><div class="chips"><span>router</span><span>validation</span><span>tests</span><span>PR workflow</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">Month 6</div><div class="timeline-content"><h3>Job Packaging + Application Emails</h3><p>Deploy, record a demo, update CV/LinkedIn, and prepare job application messages.</p><div class="chips"><span>deploy</span><span>CV</span><span>LinkedIn</span><span>application email</span></div></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="courses">
+        <div class="section-title reveal"><span class="eyebrow">Course Links</span><h2>Recommended courses with direct links</h2><p>Check price, reviews, and update date before buying.</p></div>
+        <div class="grid cols3">
+          <article class="course reveal"><h3>1. JavaScript for React</h3><p>The Complete JavaScript Course by Jonas Schmedtmann.</p><div class="meta"><span>Start now</span><span>Required</span></div><ul><li>ES6+</li><li>array methods</li><li>async/await</li><li>fetch API</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay1"><h3>2. React.js Complete Course</h3><p>The Ultimate React Course by Jonas Schmedtmann.</p><div class="meta"><span>Main focus</span><span>Month 2–4</span></div><ul><li>components</li><li>hooks</li><li>forms</li><li>router</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/the-ultimate-react-course/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay2"><h3>3. React + TypeScript</h3><p>React & TypeScript - The Practical Guide.</p><div class="meta"><span>Month 4</span><span>Professional</span></div><ul><li>typed props</li><li>interfaces</li><li>API types</li><li>ERP types</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/react-typescript-the-practical-guide/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal"><h3>4. Professional Email Writing</h3><p>Improve clear and effective professional emails.</p><div class="meta"><span>Weekly</span><span>Remote skill</span></div><ul><li>follow-up emails</li><li>daily updates</li><li>technical explanation</li><li>meeting summaries</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/professional-email-writing/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay1"><h3>5. Git & GitHub Bootcamp</h3><p>The main Git course recommended for your workflow.</p><div class="meta"><span>Required</span><span>GitHub</span></div><ul><li>commits</li><li>branches</li><li>pull requests</li><li>merge conflicts</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/git-and-github-bootcamp/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay2"><h3>6. Git Complete</h3><p>Alternative step-by-step Git course.</p><div class="meta"><span>Alternative</span><span>Git</span></div><ul><li>Git basics</li><li>branches</li><li>workflow</li><li>GitHub</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/git-complete/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal"><h3>7. Business Email Writing</h3><p>Alternative email course for business communication.</p><div class="meta"><span>Alternative</span><span>Email</span></div><ul><li>clear structure</li><li>concise writing</li><li>professional tone</li><li>work communication</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/email-writing-course-business-communication/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay1"><h3>8. Node.js Basics Only</h3><p>Use Node.js only as a support skill for API understanding.</p><div class="meta"><span>5%</span><span>Support</span></div><ul><li>Express routes</li><li>REST API</li><li>JSON</li><li>JWT concept</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay2"><h3>9. GitHub Actions Later</h3><p>Study later when Git basics become comfortable.</p><div class="meta"><span>Later</span><span>CI/CD</span></div><ul><li>workflow YAML</li><li>build steps</li><li>tests</li><li>deployment</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/git-github-actions-for-ci-cd/" target="_blank" rel="noopener">Open Course</a></article>
+        </div>
+      </section>
+
+      <section class="section split" id="daily">
+        <div class="section-title align-left reveal"><span class="eyebrow">Daily Routine</span><h2>2 hours daily with React, Git, and email practice</h2><p>React remains the priority, but Git and writing are now fixed habits.</p></div>
+        <div class="routine reveal delay1">
+          <div class="routine-row"><span>45 min</span><div><strong>React / JavaScript lesson</strong><p>One focused lesson only.</p></div></div>
+          <div class="routine-row"><span>45 min</span><div><strong>Apply on 3B-nexosuite</strong><p>Create a component, page, form, table, or UI improvement.</p></div></div>
+          <div class="routine-row"><span>15 min</span><div><strong>TypeScript / API / UI polish</strong><p>Improve types, API calls, loading states, or responsiveness.</p></div></div>
+          <div class="routine-row"><span>10 min</span><div><strong>Git + GitHub</strong><p>Commit your work and update README when needed.</p></div></div>
+          <div class="routine-row"><span>5 min</span><div><strong>Email / Remote update</strong><p>Write one short professional update.</p></div></div>
+        </div>
+      </section>
+
+      <section class="section" id="tracker">
+        <div class="section-title reveal"><span class="eyebrow">Tracker</span><h2>Daily checklist</h2><p>Saved locally in your browser.</p></div>
+        <div class="tracker reveal">
+          <div class="tracker-head"><h3>Today’s Checklist</h3><button class="btn small secondary reset">Reset</button></div>
+          <div class="checklist">
+            <label><input type="checkbox" data-key="lesson"><span>Studied one React/JavaScript lesson</span></label>
+            <label><input type="checkbox" data-key="apply"><span>Applied it to 3B-nexosuite</span></label>
+            <label><input type="checkbox" data-key="ts"><span>Improved TypeScript/API/UI quality</span></label>
+            <label><input type="checkbox" data-key="git"><span>Made Git commit or GitHub update</span></label>
+            <label><input type="checkbox" data-key="email"><span>Wrote one professional email or remote update</span></label>
+          </div>
+          <div class="score"><span class="score-text">0 / 5 completed</span><div class="bar big"><span class="score-bar"></span></div></div>
+        </div>
+      </section>
+
+      <section class="section"><div class="cta reveal"><span class="eyebrow">Final Goal</span><h2>Build visible proof, not only knowledge.</h2><p>Your GitHub repo should prove React UI, TypeScript/API work, Git workflow, README quality, and professional communication.</p><a class="btn primary" href="#top">Back to top</a></div></section>
+    </main>
+    <footer class="footer">3B-nexosuite React + Email + Git Roadmap · React 60% · TS/API 20% · Email 10% · Git 5% · Node 5%</footer>
+  </div>
+
+  <div id="ar" class="lang">
+    <header class="hero">
+      <nav class="navbar">
+        <a class="brand" href="#ar-top"><span class="mark">3B</span><span><strong>3B-nexosuite</strong><small>React + Email + Git</small></span></a>
+        <div class="top-actions"><button class="lang-btn" id="toEn">EN</button><button class="menu" id="menuAr"><span></span><span></span><span></span></button></div>
+        <div class="nav" id="navAr"><a href="#ar-split">التقسيمة</a><a href="#ar-skills">المهارات</a><a href="#ar-email">الإيميل</a><a href="#ar-git">Git</a><a href="#ar-roadmap">الخطة</a><a href="#ar-courses">الكورسات</a><a href="#ar-daily">اليومي</a></div>
+      </nav>
+
+      <section class="hero-grid" id="ar-top">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">React.js · Email · GitHub · Remote Jobs</span>
+          <h1>React أولًا، مع الإيميل وGit كمهارات ثابتة.</h1>
+          <p>هذه النسخة تجهزك لوظائف React.js Remote في الإمارات ومصر والخليج باستخدام 3B-nexosuite كمشروع SaaS/ERP للـ Portfolio.</p>
+          <div class="hero-actions"><a class="btn primary" href="#ar-courses">روابط الكورسات</a><a class="btn secondary" href="#ar-git">مهارات Git</a></div>
+          <div class="stats">
+            <div class="stat"><strong>60%</strong><span>React / Frontend</span></div>
+            <div class="stat"><strong>20%</strong><span>TypeScript + API</span></div>
+            <div class="stat"><strong>10%</strong><span>Email / Remote</span></div>
+            <div class="stat"><strong>5%</strong><span>Git + GitHub</span></div>
+            <div class="stat"><strong>5%</strong><span>Node basics</span></div>
+          </div>
+        </div>
+
+        <div class="card reveal delay1">
+          <div class="card-top"><span class="dot"></span><span>Final Positioning</span></div>
+          <h2>React Frontend Developer بخبرة SaaS/ERP Product وGitHub وتواصل مهني.</h2>
+          <p>فرق الريموت تهتم بجودة UI وGit workflow وREADME واضح وتحديثات مكتوبة وقدرتك على شرح عملك.</p>
+          <div class="progress">
+            <label>React / Frontend <span>60%</span></label><div class="bar"><span style="width:60%"></span></div>
+            <label>TypeScript + API Integration <span>20%</span></label><div class="bar"><span style="width:20%"></span></div>
+            <label>Email + Remote Communication <span>10%</span></label><div class="bar"><span style="width:10%"></span></div>
+            <label>Git + GitHub <span>5%</span></label><div class="bar"><span style="width:5%"></span></div>
+            <label>Node.js Basics <span>5%</span></label><div class="bar"><span style="width:5%"></span></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="ar-split">
+        <div class="section-title reveal"><span class="eyebrow">التقسيمة النهائية</span><h2>تركيز متوازن للتعلم</h2><p>React هو المسار الأساسي، لكن الإيميل وGit مهمين جدًا لجاهزية الريموت.</p></div>
+        <div class="grid cols5">
+          <article class="info reveal"><div class="icon">60%</div><h3>React / Frontend</h3><p>Components وhooks وforms وrouting وdashboards وresponsive UI وTailwind وportfolio proof.</p></article>
+          <article class="info reveal delay1"><div class="icon">20%</div><h3>TypeScript + API</h3><p>Typed props وAPI response types وAxios/fetch وloading/error states وfilters وCRUD.</p></article>
+          <article class="info reveal delay2"><div class="icon">10%</div><h3>Email Skills</h3><p>Daily updates وfollow-ups وmeeting summaries وremote status reports وtechnical explanations.</p></article>
+          <article class="info reveal delay3"><div class="icon">5%</div><h3>Git + GitHub</h3><p>Commits وbranches وpull requests وREADME وmerge conflicts وGitHub Pages.</p></article>
+          <article class="info reveal"><div class="icon">5%</div><h3>Node.js Basics</h3><p>فقط لفهم REST APIs وExpress routes وJSON وbackend communication.</p></article>
+        </div>
+      </section>
+
+      <section class="section dark" id="ar-skills">
+        <div class="section-title light reveal"><span class="eyebrow">المهارات</span><h2>مهارات وظائف React Remote</h2><p>هذه المهارات يجب أن تظهر في مشروعك وGitHub وCV وLinkedIn والمقابلات.</p></div>
+        <div class="grid cols4">
+          <article class="skill reveal"><h3>JavaScript for React</h3><ul><li>ES6+</li><li>map/filter/reduce</li><li>destructuring</li><li>async/await</li><li>fetch</li></ul></article>
+          <article class="skill reveal delay1"><h3>React.js</h3><ul><li>components</li><li>props/state</li><li>hooks</li><li>forms</li><li>routing</li></ul></article>
+          <article class="skill reveal delay2"><h3>TypeScript</h3><ul><li>types</li><li>interfaces</li><li>typed props</li><li>API response types</li><li>ERP models</li></ul></article>
+          <article class="skill reveal delay3"><h3>Email Writing</h3><ul><li>daily updates</li><li>follow-ups</li><li>meeting summaries</li><li>technical issue emails</li><li>remote async updates</li></ul></article>
+          <article class="skill reveal"><h3>Git + GitHub</h3><ul><li>commits</li><li>branches</li><li>pull requests</li><li>merge conflicts</li><li>GitHub Pages</li></ul></article>
+          <article class="skill reveal delay1"><h3>UI / Tailwind</h3><ul><li>responsive design</li><li>dashboards</li><li>tables</li><li>forms</li><li>modals</li></ul></article>
+          <article class="skill reveal delay2"><h3>API Integration</h3><ul><li>Axios/fetch</li><li>loading states</li><li>error states</li><li>pagination</li><li>CRUD</li></ul></article>
+          <article class="skill reveal delay3"><h3>Remote Workflow</h3><ul><li>README</li><li>demo video</li><li>English updates</li><li>clean portfolio</li><li>job applications</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section" id="ar-email">
+        <div class="section-title reveal"><span class="eyebrow">Email & Remote Communication</span><h2>مهارة الإيميل تظل جزءًا من الخطة</h2><p>كل أسبوع، اكتب واحفظ templates للريموت وHR والعملاء وتحديثات المشروع.</p></div>
+        <div class="grid cols3">
+          <article class="email-card reveal"><div class="icon">01</div><h3>Daily / Weekly Update</h3><p>تستخدم مع المدير أو فريق الريموت.</p><ul><li>ما تم إنجازه</li><li>ما تعمل عليه الآن</li><li>العوائق</li><li>الخطوات القادمة</li></ul></article>
+          <article class="email-card reveal delay1"><div class="icon">02</div><h3>Technical Issue Email</h3><p>لشرح bug أو delay بشكل مهني.</p><ul><li>ملخص المشكلة</li><li>الخطوات التي تم فحصها</li><li>السبب المحتمل</li><li>الحل المقترح</li></ul></article>
+          <article class="email-card reveal delay2"><div class="icon">03</div><h3>Follow-up / Reminder Email</h3><p>يستخدم مع العملاء أو HR أو المديرين.</p><ul><li>تذكير مهذب</li><li>طلب واضح</li><li>موعد نهائي إذا لزم</li><li>خاتمة مهنية</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section" id="ar-git">
+        <div class="section-title reveal"><span class="eyebrow">Git + GitHub</span><h2>Git مطلوب لوظائف React Remote</h2><p>استخدم Git يوميًا على 3B-nexosuite. الـ commits والbranches والREADME يثبتوا احترافك.</p></div>
+        <div class="grid cols3">
+          <article class="email-card reveal"><div class="icon">01</div><h3>Daily Git Basics</h3><p>استخدم هذه الأوامر بعد كل جلسة.</p><ul><li>git status</li><li>git add .</li><li>git commit</li><li>git push</li></ul></article>
+          <article class="email-card reveal delay1"><div class="icon">02</div><h3>Weekly Git Workflow</h3><p>تدرب مثل فريق Remote.</p><ul><li>create branch</li><li>build feature</li><li>open pull request</li><li>merge to main</li></ul></article>
+          <article class="email-card reveal delay2"><div class="icon">03</div><h3>Portfolio GitHub</h3><p>اجعل الريبو احترافي.</p><ul><li>README.md</li><li>screenshots</li><li>live demo</li><li>GitHub Pages</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section" id="ar-roadmap">
+        <div class="section-title reveal"><span class="eyebrow">خطة ٦ شهور</span><h2>خطة React مع Email وGit</h2><p>كل شهر يحسن dashboard الخاص بـ 3B-nexosuite، والتواصل، وإثبات GitHub.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="month">الشهر 1</div><div class="timeline-content"><h3>JavaScript + Git Basics + Email Basics</h3><p>قوِّ JavaScript وابدأ daily commits واكتب status emails.</p><div class="chips"><span>ES6</span><span>arrays</span><span>async/await</span><span>git commit</span><span>daily update</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">الشهر 2</div><div class="timeline-content"><h3>React Fundamentals + Follow-ups</h3><p>ابنِ components وforms مع تدريب follow-up emails.</p><div class="chips"><span>components</span><span>state</span><span>forms</span><span>branching</span><span>follow-up</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">الشهر 3</div><div class="timeline-content"><h3>React Dashboard UI + GitHub Pages</h3><p>ابنِ dashboard وانشر تقدمك على GitHub Pages.</p><div class="chips"><span>dashboard</span><span>Tailwind</span><span>tables</span><span>GitHub Pages</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">الشهر 4</div><div class="timeline-content"><h3>TypeScript + API + Technical Emails</h3><p>Typing للـ components وربط APIs وكتابة technical issue explanations.</p><div class="chips"><span>TypeScript</span><span>API</span><span>loading/error</span><span>technical email</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">الشهر 5</div><div class="timeline-content"><h3>Professional Workflow + Pull Requests</h3><p>Routing وvalidation وtests وpull requests وremote updates.</p><div class="chips"><span>router</span><span>validation</span><span>tests</span><span>PR workflow</span></div></div></article>
+          <article class="timeline-item reveal"><div class="month">الشهر 6</div><div class="timeline-content"><h3>Job Packaging + Application Emails</h3><p>Deploy وdemo وCV/LinkedIn وتجهيز رسائل التقديم.</p><div class="chips"><span>deploy</span><span>CV</span><span>LinkedIn</span><span>application email</span></div></div></article>
+        </div>
+      </section>
+
+      <section class="section" id="ar-courses">
+        <div class="section-title reveal"><span class="eyebrow">روابط الكورسات</span><h2>كورسات مقترحة بروابط مباشرة</h2><p>راجع السعر والتقييم وتاريخ التحديث قبل الشراء.</p></div>
+        <div class="grid cols3">
+          <article class="course reveal"><h3>1. JavaScript for React</h3><p>The Complete JavaScript Course by Jonas Schmedtmann.</p><div class="meta"><span>ابدأ الآن</span><span>Required</span></div><ul><li>ES6+</li><li>array methods</li><li>async/await</li><li>fetch API</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay1"><h3>2. React.js Complete Course</h3><p>The Ultimate React Course by Jonas Schmedtmann.</p><div class="meta"><span>Main focus</span><span>Month 2–4</span></div><ul><li>components</li><li>hooks</li><li>forms</li><li>router</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/the-ultimate-react-course/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay2"><h3>3. React + TypeScript</h3><p>React & TypeScript - The Practical Guide.</p><div class="meta"><span>Month 4</span><span>Professional</span></div><ul><li>typed props</li><li>interfaces</li><li>API types</li><li>ERP types</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/react-typescript-the-practical-guide/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal"><h3>4. Professional Email Writing</h3><p>لتحسين الإيميلات المهنية الواضحة.</p><div class="meta"><span>Weekly</span><span>Remote skill</span></div><ul><li>follow-up emails</li><li>daily updates</li><li>technical explanation</li><li>meeting summaries</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/professional-email-writing/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay1"><h3>5. Git & GitHub Bootcamp</h3><p>الكورس الأساسي المقترح لـ Git workflow.</p><div class="meta"><span>Required</span><span>GitHub</span></div><ul><li>commits</li><li>branches</li><li>pull requests</li><li>merge conflicts</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/git-and-github-bootcamp/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay2"><h3>6. Git Complete</h3><p>بديل تدريجي لتعلم Git.</p><div class="meta"><span>Alternative</span><span>Git</span></div><ul><li>Git basics</li><li>branches</li><li>workflow</li><li>GitHub</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/git-complete/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal"><h3>7. Business Email Writing</h3><p>بديل لتطوير business communication.</p><div class="meta"><span>Alternative</span><span>Email</span></div><ul><li>clear structure</li><li>concise writing</li><li>professional tone</li><li>work communication</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/email-writing-course-business-communication/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay1"><h3>8. Node.js Basics Only</h3><p>فقط كمهارة مساعدة لفهم APIs.</p><div class="meta"><span>5%</span><span>Support</span></div><ul><li>Express routes</li><li>REST API</li><li>JSON</li><li>JWT concept</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/" target="_blank" rel="noopener">Open Course</a></article>
+          <article class="course reveal delay2"><h3>9. GitHub Actions Later</h3><p>ادرسه لاحقًا بعد Git basics.</p><div class="meta"><span>Later</span><span>CI/CD</span></div><ul><li>workflow YAML</li><li>build steps</li><li>tests</li><li>deployment</li></ul><a class="btn primary course-link" href="https://www.udemy.com/course/git-github-actions-for-ci-cd/" target="_blank" rel="noopener">Open Course</a></article>
+        </div>
+      </section>
+
+      <section class="section split" id="ar-daily">
+        <div class="section-title align-left reveal"><span class="eyebrow">الروتين اليومي</span><h2>ساعتين يوميًا مع React وGit والإيميل</h2><p>React هو الأولوية، لكن Git والكتابة أصبحوا عادة ثابتة.</p></div>
+        <div class="routine reveal delay1">
+          <div class="routine-row"><span>45 min</span><div><strong>React / JavaScript lesson</strong><p>درس واحد مركز.</p></div></div>
+          <div class="routine-row"><span>45 min</span><div><strong>تطبيق على 3B-nexosuite</strong><p>Component أو page أو form أو table أو UI improvement.</p></div></div>
+          <div class="routine-row"><span>15 min</span><div><strong>TypeScript / API / UI polish</strong><p>تحسين types أو API calls أو loading states أو responsiveness.</p></div></div>
+          <div class="routine-row"><span>10 min</span><div><strong>Git + GitHub</strong><p>اعمل commit وحدث README عند الحاجة.</p></div></div>
+          <div class="routine-row"><span>5 min</span><div><strong>Email / Remote update</strong><p>اكتب update مهني قصير.</p></div></div>
+        </div>
+      </section>
+
+      <section class="section" id="ar-tracker">
+        <div class="section-title reveal"><span class="eyebrow">المتابعة</span><h2>قائمة يومية</h2><p>يتم حفظها محليًا في المتصفح.</p></div>
+        <div class="tracker reveal">
+          <div class="tracker-head"><h3>Today’s Checklist</h3><button class="btn small secondary reset">Reset</button></div>
+          <div class="checklist">
+            <label><input type="checkbox" data-key="lesson"><span>درست درس React/JavaScript</span></label>
+            <label><input type="checkbox" data-key="apply"><span>طبقت على 3B-nexosuite</span></label>
+            <label><input type="checkbox" data-key="ts"><span>حسنت TypeScript/API/UI quality</span></label>
+            <label><input type="checkbox" data-key="git"><span>عملت Git commit أو GitHub update</span></label>
+            <label><input type="checkbox" data-key="email"><span>كتبت professional email أو remote update</span></label>
+          </div>
+          <div class="score"><span class="score-text">0 / 5 completed</span><div class="bar big"><span class="score-bar"></span></div></div>
+        </div>
+      </section>
+
+      <section class="section"><div class="cta reveal"><span class="eyebrow">Final Goal</span><h2>ابنِ دليلًا واضحًا، وليس معرفة فقط.</h2><p>GitHub repo لازم يثبت React UI وTypeScript/API وGit workflow وREADME جيد وتواصل مهني.</p><a class="btn primary" href="#ar-top">العودة للأعلى</a></div></section>
+    </main>
+    <footer class="footer">3B-nexosuite React + Email + Git Roadmap · React 60% · TS/API 20% · Email 10% · Git 5% · Node 5%</footer>
+  </div>
+
+  <script>
+    const body=document.getElementById("pageBody"), en=document.getElementById("en"), ar=document.getElementById("ar");
+    function setLang(lang){const isAr=lang==="ar";en.classList.toggle("active",!isAr);ar.classList.toggle("active",isAr);document.documentElement.lang=isAr?"ar":"en";document.documentElement.dir=isAr?"rtl":"ltr";body.setAttribute("dir",isAr?"rtl":"ltr");localStorage.setItem("3b-react-email-git-lang",lang);window.scrollTo({top:0,behavior:"smooth"});setTimeout(initReveal,100);updateScore()}
+    document.getElementById("toAr").addEventListener("click",()=>setLang("ar")); document.getElementById("toEn").addEventListener("click",()=>setLang("en")); if(localStorage.getItem("3b-react-email-git-lang")==="ar")setLang("ar");
+    function menu(btn,nav){const b=document.getElementById(btn),n=document.getElementById(nav);b.addEventListener("click",()=>n.classList.toggle("open"));n.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>n.classList.remove("open")))}
+    menu("menuEn","navEn"); menu("menuAr","navAr");
+    let observer; function initReveal(){if(observer)observer.disconnect();observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");observer.unobserve(e.target)}})},{threshold:.14});document.querySelectorAll(".lang.active .reveal").forEach(el=>observer.observe(el))} initReveal();
+    const key="3b-react-email-git-checklist"; function getState(){try{return JSON.parse(localStorage.getItem(key))||{}}catch{return{}}} function saveState(s){localStorage.setItem(key,JSON.stringify(s))}
+    function load(){const s=getState();document.querySelectorAll(".checklist input").forEach(b=>b.checked=!!s[b.dataset.key]);updateScore()}
+    function updateScore(){document.querySelectorAll(".tracker").forEach(card=>{const boxes=[...card.querySelectorAll("input")],done=boxes.filter(b=>b.checked).length,total=boxes.length,text=card.querySelector(".score-text"),bar=card.querySelector(".score-bar");if(text)text.textContent=`${done} / ${total} completed`;if(bar)bar.style.width=`${total?(done/total)*100:0}%`})}
+    document.querySelectorAll(".checklist").forEach(list=>list.addEventListener("change",e=>{const t=e.target;if(!t.matches("input"))return;const s=getState();s[t.dataset.key]=t.checked;saveState(s);document.querySelectorAll(`.checklist input[data-key="${t.dataset.key}"]`).forEach(b=>b.checked=t.checked);updateScore()}));
+    document.querySelectorAll(".reset").forEach(btn=>btn.addEventListener("click",()=>{localStorage.removeItem(key);load()})); load();
+  </script>
+</body>
+</html>
